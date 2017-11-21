@@ -5,10 +5,28 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <!-- <h1>Test</h1> -->
+
+   <h1>Team Name: <%=@team_hash["name"] %></h1>
+   <h2>Coach: <%=@team_hash["coach"] %></h2>
+   <h2>Point Guard: <%=@team_hash["pg"] %></h2>
+   <h2>Shooting Guard: <%=@team_hash["sg"] %></h2>
+   <h2>Small Forward: <%=@team_hash["sf"] %></h2>
+   <h2>Power Forward: <%=@team_hash["pf"] %></h2>
+   <h2>Center: <%=@team_hash["c"] %></h2>
+
+
+
+   <!--The below method is more efficient and dynamic  -->
+   <!-- <% @team_hash.each do |position, name| %>
+    <% if position == "Team Name" %>
+      <h1><%= "#{position}: #{name}" %></h1>
+    <% else %>
+      <h2> <%= "#{position}: #{name}" %></h2>
+    <% end %>
+   <% end %> -->
+
 
 
  </body>
 </html>
-
-
