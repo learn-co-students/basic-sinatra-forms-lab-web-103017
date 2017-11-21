@@ -5,10 +5,14 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <form method="POST" action="/newteam">
+     <ul>Team Name: <%=@name%></ul>
+     <ul>Coach: <%= @coach %></ul>
+     <ul>Point Guard: <%=@pg %></ul>
+     <ul>Shooting Guard: <%=@sg %></ul>
+     <ul>Small Forward: <%= @sf %></ul>
+     <ul>Power Forward: <%= @pf%></ul>
+     <ul>Center: <%= @c %></ul>
+   </form>
  </body>
 </html>
-
-
